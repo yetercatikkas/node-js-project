@@ -13,6 +13,7 @@
     "http-errors": "~1.6.3",
     "isodate": "^0.1.4",
     "jade": "~1.11.0",
+    "mongodb": "^3.6.6",
     "morgan": "~1.9.1"
   },
   "jest": {
