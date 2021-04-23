@@ -60,6 +60,20 @@ module.exports = {
                         'maxCount must be an number e.g: 100')
                 }
                 return true
-            })]
+            }),
+
+
+        check('minCount')
+            .custom((minCount, { req }) => {
+
+                if (minCount >  req.body.maxCount) {
+                    throw new Error(
+                        'minCount must be less than or equal maxCount ')
+                }
+                return true
+            })
+    ]
+
+
 
 }
